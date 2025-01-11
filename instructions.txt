@@ -1,0 +1,7 @@
+Instructions:
+
+Clone https://github.com/SriramKrishnan8/scl_cpd.git and install (includes framing spec.txt, ./configure, make and sudo make install). Keep SCL_CGI=scl_cpd, SCL_HTDOCS=scl_cpd, TFPATH=/tmp/SKT_TEMP_CPD
+Clone https://github.com/SriramKrishnan8/evaluate_scl_cpd.git and read instructions
+Check the working of various SCL tools in the browser
+sudo rm -r /tmp/SKT_TEMP_CPD /tmp/CURR_PID_SCL
+

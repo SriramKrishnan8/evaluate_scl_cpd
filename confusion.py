@@ -2,13 +2,26 @@ import sys
 
 import pandas as pd
 
-script, in_ = sys.argv
+import devtrans as dt
+
+script, in_, conf_fine, conf_course, class_fine, class_course = sys.argv
+
+
+def replace_underscores(lst_):
+    """
+    Replace underscores with hyphens in a list of strings.
+    """
+
+    return [item.replace("_", "-") for item in lst_]
 
 # Load TSV file
 df = pd.read_csv(in_, sep="\t", header=None, names=["gold", "pred"], encoding="utf-8")
 
-gold_fine = df["gold"].tolist()
-pred_fine = df["pred"].tolist()
+gold_fine = [ dt.dev2iast(item) for item in df["gold"].tolist() ]
+pred_fine = [ dt.dev2iast(item) for item in df["pred"].tolist() ]
+
+gold_fine = replace_underscores(gold_fine)
+pred_fine = replace_underscores(pred_fine)
 
 fine_to_coarse_dev = {
     "बहुव्रीहिः" : "बहुव्रीहिः",
@@ -70,6 +83,7 @@ fine_to_coarse = {
     # "karmadhārayaḥ" : "karmadhārayaḥ",
     "karmadhārayaḥ" : "tatpuruṣaḥ",
     "itaretara-dvandvaḥ" : "dvandvaḥ",
+    "prathamā-tatpuruṣaḥ" : "tatpuruṣaḥ",
     "upapada-tatpuruṣaḥ" : "tatpuruṣaḥ",
     "tṛtīyā-tatpuruṣaḥ" : "tatpuruṣaḥ",
     "saptamī-tatpuruṣaḥ" : "tatpuruṣaḥ",
@@ -128,6 +142,13 @@ fine_to_coarse = {
     "karmadhārayaḥ-3" : "tatpuruṣaḥ",
     "karmadhārayaḥ-4" : "tatpuruṣaḥ",
     "karmadhārayaḥ-5" : "tatpuruṣaḥ",
+    "avyayībhāvaḥ-1" : "avyayībhāvaḥ",
+    "avyayībhāvaḥ-2" : "avyayībhāvaḥ",
+    "avyayībhāvaḥ-3" : "avyayībhāvaḥ",
+    "avyayībhāvaḥ-4" : "avyayībhāvaḥ",
+    "avyayībhāvaḥ-5" : "avyayībhāvaḥ",
+    "avyayībhāvaḥ-6" : "avyayībhāvaḥ",
+    "avyayībhāvaḥ-7" : "avyayībhāvaḥ",
     # "-" : "-",
     "-" : "tatpuruṣaḥ",
     "upamānam" : "tatpuruṣaḥ",
@@ -178,8 +199,8 @@ df_cm_fine = pd.DataFrame(cm_fine, index=fine_labels, columns=fine_labels)
 print("Confusion Matrix (Fine)")
 print(df_cm_fine)
 
-pd.DataFrame(cm_coarse, index=coarse_labels, columns=coarse_labels).to_csv("confusion_coarse.csv", sep="\t", encoding="utf-8")
-pd.DataFrame(cm_fine, index=fine_labels, columns=fine_labels).to_csv("confusion_fine.csv", sep="\t", encoding="utf-8")
+pd.DataFrame(cm_coarse, index=coarse_labels, columns=coarse_labels).to_csv(conf_course, sep="\t", encoding="utf-8")
+pd.DataFrame(cm_fine, index=fine_labels, columns=fine_labels).to_csv(conf_fine, sep="\t", encoding="utf-8")
 
 # Precision recall and f score
 from sklearn.metrics import classification_report
@@ -196,9 +217,9 @@ def calculate_score(gold, pred, file_n):
     print(report_str)
 
 
-calculate_score(gold_coarse, pred_coarse, "classification_report_coarse.tsv")
+calculate_score(gold_coarse, pred_coarse, class_course)
 
-calculate_score(gold_fine, pred_fine, "classification_report_fine.tsv")
+calculate_score(gold_fine, pred_fine, class_fine)
 
 #import json
 

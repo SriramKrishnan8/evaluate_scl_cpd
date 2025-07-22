@@ -1,0 +1,7 @@
+	precision	recall	f1-score	support
+avyayībhāvaḥ	0.0000	0.0000	0.0000	21.0000
+bahuvrīhiḥ	0.2258	0.3500	0.2745	20.0000
+tatpuruṣaḥ	0.8989	0.8989	0.8989	277.0000
+micro avg	0.8312	0.8050	0.8179	318.0000
+macro avg	0.3749	0.4163	0.3911	318.0000
+weighted avg	0.7972	0.8050	0.8003	318.0000

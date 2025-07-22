@@ -7,7 +7,7 @@ import devtrans as dt
 
 from evaluate import run_all
 
-script, inp_, out_, err, res = sys.argv
+script, inp_, out_, err, res, pair = sys.argv
 
 
 rel_codes = {
@@ -97,7 +97,7 @@ for id_, cpd_str, cpd_details in compounds:
     
     test_compounds.append((id_, cpd_str, new_cpd_details))
 
-overall_result, errors, temp_results = run_all(test_compounds[:], "Unicode")
+overall_result, errors, temp_results, gold_pred_pairs = run_all(test_compounds[:], "Unicode")
 
 out_lines = []
 for id_, line, gold_analysis, status, pred_analysis, rel_type_score, rel_index_score, complete_rel_score, no_analysis in temp_results:
@@ -114,6 +114,10 @@ for id_, line, gold_analysis in errors:
 err_f = open(err, "w", encoding="utf-8")
 err_f.write("\n".join(err_lines))
 err_f.close()
+
+pair_f = open(pair, "w", encoding="utf-8")
+pair_f.write("\n".join(["\t".join(x) for x in gold_pred_pairs]))
+pair_f.close()
 
 with open(res, "w", encoding="utf-8") as f:
     f.write(json.dumps(overall_result, ensure_ascii=False))

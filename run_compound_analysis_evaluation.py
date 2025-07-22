@@ -1,11 +1,13 @@
 import sys
 import os
 
+import json
+
 import devtrans
 
 from evaluate import run_all
 
-script, in_dir = sys.argv
+script, in_dir, out_, err, res, pair = sys.argv
 
 
 def read_contents(name_):
@@ -60,11 +62,11 @@ for f in os.listdir(in_dir):
         
         morph = entry[5]
         
-        relation = entry[7]
+        relation = entry[6]
         
         samAsa_representation = entry[11] if len(entry) >= 12 else ""
         
-        if "-" in word:
+        if "-" in word and "(" not in word:
             compound_str += word
             cur_cmpnt_id += 1
             
@@ -90,12 +92,20 @@ for f in os.listdir(in_dir):
             
             compound_details.append((f"1.{c_index}", word, "कर्ता,2.1", samAsa_representation))
             compound_id += 1
-            if "द्वि" in morph:
-                verb = "स्तः"
-            elif "बहु" in morph:
-                verb = "सन्ति"
+            if any([x in morph for x in ["1", "2"]]):
+                if "द्वि" in morph:
+                    verb = "स्तः"
+                elif "बहु" in morph:
+                    verb = "सन्ति"
+                else:
+                    verb = "अस्ति"
             else:
-                verb = "अस्ति"
+                if "द्वि" in morph:
+                    verb = "भवतः"
+                elif "बहु" in morph:
+                    verb = "भवन्ति"
+                else:
+                    verb = "भवति"
             
             compound_details.append(("2.1", verb, f"अभिहित_कर्ता,1.{c_index}", ""))
             
@@ -114,12 +124,28 @@ for id_, cpd_str, cpd_details in compounds:
     
     test_compounds.append((id_, cpd_str, new_cpd_details))
 
-overall_result, errors = run_all(test_compounds[:], "Unicode")
+overall_result, errors, temp_results, gold_pred_pairs = run_all(test_compounds[:], "Unicode")
 
-print("Result: " + str(overall_result))
-print(f"Errors in {str(len(errors))} examples")
-for id_, cpd, gold_analysis in errors:
-    print(id_, cpd)
-    for index, word, rel in gold_analysis:
-        print(index, word, rel)
+out_lines = []
+for id_, line, gold_analysis, status, pred_analysis, rel_type_score, rel_index_score, complete_rel_score, no_analysis in temp_results:
+    out_lines.append("\t".join((str(id_), line, json.dumps(gold_analysis, ensure_ascii=False), status, json.dumps(pred_analysis, ensure_ascii=False), rel_type_score, rel_index_score, complete_rel_score, no_analysis)))
+
+out_f = open(out_, "w", encoding="utf-8")
+out_f.write("\n".join(out_lines))
+out_f.close()
+
+err_lines = []
+for id_, line, gold_analysis in errors:
+    err_lines.append("\t".join((str(id_), line, json.dumps(gold_analysis, ensure_ascii=False))))
+
+err_f = open(err, "w", encoding="utf-8")
+err_f.write("\n".join(err_lines))
+err_f.close()
+
+pair_f = open(pair, "w", encoding="utf-8")
+pair_f.write("\n".join(["\t".join(x) for x in gold_pred_pairs]))
+pair_f.close()
+
+with open(res, "w", encoding="utf-8") as f:
+    f.write(json.dumps(overall_result, ensure_ascii=False))
 

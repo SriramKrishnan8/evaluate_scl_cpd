@@ -1,28 +1,26 @@
-	-	1.2-kartā	1.2-sambodhyaḥ	avyayībhāvaḥ-1	avyayībhāvaḥ-2	avyayībhāvaḥ-3	avyayībhāvaḥ-6	avyayībhāvaḥ-7	bahuvrīhiḥ	caturthī-tatpuruṣaḥ	dvigu-tatpuruṣaḥ	dvitīyā-tatpuruṣaḥ	karmadhārayaḥ	karmadhārayaḥ-1	karmadhārayaḥ-2	karmadhārayaḥ-3	karmadhārayaḥ-4	karmadhārayaḥ-5	nañ-tatpuruṣaḥ	pañcamī-tatpuruṣaḥ	prathamā-tatpuruṣaḥ	saptamī-tatpuruṣaḥ	tatpuruṣaḥ	tṛtīyā-tatpuruṣaḥ	upamānam	upapada-tatpuruṣaḥ	ṣaṣṭhī-tatpuruṣaḥ
--	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-1.2-kartā	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-1.2-sambodhyaḥ	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-avyayībhāvaḥ-1	1	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0
-avyayībhāvaḥ-2	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-avyayībhāvaḥ-3	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-avyayībhāvaḥ-6	0	0	0	0	0	0	0	0	1	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-avyayībhāvaḥ-7	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-bahuvrīhiḥ	0	0	0	0	0	0	0	0	7	0	3	0	0	3	0	0	1	0	2	0	0	0	4	0	0	0	0
-caturthī-tatpuruṣaḥ	0	1	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-dvigu-tatpuruṣaḥ	4	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
-dvitīyā-tatpuruṣaḥ	2	0	0	0	0	0	0	0	0	1	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
-karmadhārayaḥ	0	0	0	0	0	0	0	0	1	0	0	0	5	0	0	0	0	0	0	0	0	0	1	0	0	0	0
-karmadhārayaḥ-1	3	0	0	0	0	0	0	0	2	0	0	1	0	17	0	0	0	0	0	0	0	0	2	0	0	0	2
-karmadhārayaḥ-2	7	0	0	0	0	0	0	0	7	0	0	0	0	0	18	0	0	0	1	0	0	2	0	0	0	0	13
-karmadhārayaḥ-3	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
-karmadhārayaḥ-4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3
-karmadhārayaḥ-5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0
-nañ-tatpuruṣaḥ	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0
-pañcamī-tatpuruṣaḥ	0	0	0	0	0	0	0	0	1	0	0	2	0	1	0	0	0	0	0	10	0	0	0	0	0	0	0
-prathamā-tatpuruṣaḥ	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0
-saptamī-tatpuruṣaḥ	2	3	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	14	0	0	0	0	1
-tatpuruṣaḥ	0	2	0	0	0	0	0	0	2	0	0	2	0	9	0	0	1	0	0	2	0	0	32	3	0	0	10
-tṛtīyā-tatpuruṣaḥ	2	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	1	0	0	0	12	1	0	3
-upamānam	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-upapada-tatpuruṣaḥ	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0
-ṣaṣṭhī-tatpuruṣaḥ	0	0	0	0	0	0	0	0	4	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	16
+	-	avyayībhāvaḥ-1	avyayībhāvaḥ-2	avyayībhāvaḥ-3	avyayībhāvaḥ-6	avyayībhāvaḥ-7	bahuvrīhiḥ	caturthī-tatpuruṣaḥ	dvigu-tatpuruṣaḥ	dvitīyā-tatpuruṣaḥ	karmadhārayaḥ	karmadhārayaḥ-1	karmadhārayaḥ-2	karmadhārayaḥ-3	karmadhārayaḥ-4	karmadhārayaḥ-5	nañ-tatpuruṣaḥ	pañcamī-tatpuruṣaḥ	prathamā-tatpuruṣaḥ	saptamī-tatpuruṣaḥ	tatpuruṣaḥ	tṛtīyā-tatpuruṣaḥ	upamānam	upapada-tatpuruṣaḥ	ṣaṣṭhī-tatpuruṣaḥ
+-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+avyayībhāvaḥ-1	1	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0
+avyayībhāvaḥ-2	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+avyayībhāvaḥ-3	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+avyayībhāvaḥ-6	0	0	0	0	0	0	1	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+avyayībhāvaḥ-7	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+bahuvrīhiḥ	0	0	0	0	0	0	7	0	3	0	0	3	0	0	1	0	2	0	0	0	4	0	0	0	0
+caturthī-tatpuruṣaḥ	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+dvigu-tatpuruṣaḥ	4	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+dvitīyā-tatpuruṣaḥ	2	0	0	0	0	0	0	1	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+karmadhārayaḥ	0	0	0	0	0	0	1	0	0	0	5	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+karmadhārayaḥ-1	3	0	0	0	0	0	2	0	0	1	0	17	0	0	0	0	0	0	0	0	2	0	0	0	2
+karmadhārayaḥ-2	7	0	0	0	0	0	7	0	0	0	0	0	18	0	0	0	1	0	0	2	0	0	0	0	13
+karmadhārayaḥ-3	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+karmadhārayaḥ-4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3
+karmadhārayaḥ-5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0
+nañ-tatpuruṣaḥ	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0
+pañcamī-tatpuruṣaḥ	0	0	0	0	0	0	1	0	0	2	0	1	0	0	0	0	0	10	0	0	0	0	0	0	0
+prathamā-tatpuruṣaḥ	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0
+saptamī-tatpuruṣaḥ	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	21	0	0	0	0	1
+tatpuruṣaḥ	0	0	0	0	0	0	2	0	0	2	0	9	0	0	1	0	0	2	0	0	34	3	0	0	10
+tṛtīyā-tatpuruṣaḥ	2	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	1	0	0	0	12	1	0	3
+upamānam	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+upapada-tatpuruṣaḥ	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0
+ṣaṣṭhī-tatpuruṣaḥ	0	0	0	0	0	0	4	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	16

@@ -1,5 +1,10 @@
-	avyayībhāvaḥ	bahuvrīhiḥ	dvandvaḥ	tatpuruṣaḥ
-avyayībhāvaḥ	17	0	0	6
-bahuvrīhiḥ	13	100	2	411
-dvandvaḥ	0	7	204	35
-tatpuruṣaḥ	13	193	12	1039
+	1.2-karaṇam	1.2-kartā	1.2-ṣaṣṭhī-tatpuruṣaḥ	1.2-ṣaṣṭhīsambandhaḥ	avyayībhāvaḥ	bahuvrīhiḥ	dvandvaḥ	kartā	tatpuruṣaḥ
+1.2-karaṇam	0	0	0	0	0	0	0	0	0
+1.2-kartā	0	0	0	0	0	0	0	0	0
+1.2-ṣaṣṭhī-tatpuruṣaḥ	0	0	0	0	0	0	0	0	0
+1.2-ṣaṣṭhīsambandhaḥ	0	0	0	0	0	0	0	0	0
+avyayībhāvaḥ	0	0	0	0	17	0	0	0	6
+bahuvrīhiḥ	0	0	0	1	13	100	2	0	410
+dvandvaḥ	0	0	0	0	0	7	204	0	35
+kartā	0	0	0	0	0	0	0	0	0
+tatpuruṣaḥ	1	7	1	1	13	181	12	1	1040
